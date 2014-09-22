@@ -1,0 +1,10 @@
+<% content_for :title do %>Shipment<% end %> <h3>Shipment</h3>
+<div class="form">
+<%= simple_form_for @shipment do |form| %> 
+	<%= form.error_notification %>
+	<%= form.input :from_city, label: "From City", autofocus: true %> 
+	<%= form.input :to_city %>
+	<%= form.input :weight %>
+	<%= form.button :submit, 'Submit', class: 'submit' %> 
+<% end %>
+</div>
