@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: MyString
+  from_city: MyString
+  to_city: MyString
+  rate: 1
+  minimum: 1
+
+two:
+  level: MyString
+  from_city: MyString
+  to_city: MyString
+  rate: 1
+  minimum: 1
