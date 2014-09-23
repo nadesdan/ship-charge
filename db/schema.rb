@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140922121232) do
+ActiveRecord::Schema.define(version: 20140922141746) do
 
   create_table "cities", force: true do |t|
     t.string   "name"
@@ -22,8 +22,7 @@ ActiveRecord::Schema.define(version: 20140922121232) do
 
   create_table "services", force: true do |t|
     t.string   "level"
-    t.string   "from_city"
-    t.string   "to_city"
+    t.string   "city"
     t.integer  "rate"
     t.integer  "minimum"
     t.datetime "created_at"
@@ -32,8 +31,7 @@ ActiveRecord::Schema.define(version: 20140922121232) do
 
   create_table "shipments", force: true do |t|
     t.integer  "weight"
-    t.string   "from_city"
-    t.string   "to_city"
+    t.string   "city"
     t.integer  "value"
     t.integer  "ship_cost"
     t.datetime "created_at"

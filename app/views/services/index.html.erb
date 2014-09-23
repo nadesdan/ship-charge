@@ -1,0 +1,30 @@
+<h1>Services</h1>
+
+<table>
+  <thead>
+    <tr>
+
+       <th>ID</th>
+       <th>To</th>
+       <th>Weight</th>
+       <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @services.each do |service| %>
+      <tr>
+        <td><%= link_to service.id, service %>
+        <td><%= service.city %>
+        <td><%= service.weight%>
+        <td><%= link_to 'Edit', edit_service_path(service) %></td>
+        <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to "Add New", new_service_path %>
+
+<br>
+
+

@@ -70,6 +70,6 @@ class ShipmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def shipment_params
-      params.require(:shipment).permit(:weight, :from_city, :to_city, :value, :ship_cost)
+      params.require(:shipment).permit(:weight, :city, :value, :ship_cost)
     end
 end
